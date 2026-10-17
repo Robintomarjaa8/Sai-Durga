@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" fill="none">
+  <defs>
+    <linearGradient id="paint" x1="220" y1="265" x2="700" y2="492" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3988D8"/><stop offset=".42" stop-color="#12538E"/><stop offset="1" stop-color="#092747"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="393" y1="218" x2="619" y2="345" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C8E6FF"/><stop offset=".25" stop-color="#315B7E"/><stop offset="1" stop-color="#10273D"/>
+    </linearGradient>
+    <linearGradient id="hood" x1="435" y1="333" x2="701" y2="403" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2877BD"/><stop offset="1" stop-color="#0A3159"/>
+    </linearGradient>
+    <linearGradient id="tire" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#314155"/><stop offset=".5" stop-color="#101B29"/><stop offset="1" stop-color="#060B12"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F4F8FC"/><stop offset=".4" stop-color="#8EA0B2"/><stop offset="1" stop-color="#D8E0E9"/>
+    </linearGradient>
+    <filter id="shadow" x="95" y="418" width="778" height="120" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="19"/>
+    </filter>
+  </defs>
+  <ellipse cx="489" cy="480" rx="352" ry="35" fill="#0A2340" fill-opacity=".26" filter="url(#shadow)"/>
+  <path d="m252 376 61-90c19-28 42-48 78-59l95-29c37-11 76-8 108 10l94 55c22 13 42 31 56 52l29 43c17 9 36 17 50 31 16 16 22 36 18 58l-8 41c-3 15-15 25-30 26l-48 3c-5-55-44-88-95-88-50 0-83 38-82 88l-217 8c-1-52-32-87-80-84-47 3-75 42-74 92l-34 1c-19 1-34-12-37-31l-7-44c-4-27 9-57 36-71l46-21Z" fill="url(#paint)" stroke="#061D35" stroke-width="7" stroke-linejoin="round"/>
+  <path d="m382 241 94-27c31-9 64-6 91 9l80 45H326l31-45c6-9 14-15 25-18Z" fill="url(#glass)" stroke="#0B2A48" stroke-width="7" stroke-linejoin="round"/>
+  <path d="m487 216-12 52h171l-79-45c-25-14-53-16-80-7Z" fill="#0C263F" fill-opacity=".5"/>
+  <path d="m334 276 347 1 61 45-274 10-169-19 35-37Z" fill="#0A2D50" fill-opacity=".44"/>
+  <path d="m472 217-10 57" stroke="#98C9EE" stroke-opacity=".65" stroke-width="5"/>
+  <path d="m319 288-52 77 108 18 84-29 1-78-141 12Z" fill="#0B2D50" fill-opacity=".5"/>
+  <path d="m469 332 209-7 86 33-12 40-234-1-61-25 12-40Z" fill="url(#hood)"/>
+  <path d="m694 324 59 32-5 24-52-4-27-20 25-32Z" fill="#EAF5FF"/>
+  <path d="m691 330 47 25-2 8-45-3-17-13 17-17Z" fill="#BDE5FF"/>
+  <path d="m285 362-32 20c-15 9-23 26-20 43l3 14 50-5 37-40-38-32Z" fill="#EB5449"/>
+  <path d="M757 386c27 9 48 17 62 34 8 10 12 24 10 39l-1 8-52 3c1-38-13-66-40-84l21 0Z" fill="#0A2949"/>
+  <path d="m312 368 23 6 24 2 20-4" stroke="#FFD34F" stroke-width="5" stroke-linecap="round"/>
+  <path d="m435 421 240-2" stroke="#78BDF0" stroke-opacity=".7" stroke-width="3"/>
+  <path d="m508 446 63 1" stroke="#F8FBFF" stroke-opacity=".35" stroke-width="4" stroke-linecap="round"/>
+  <path d="m291 348 54-5" stroke="#7CB7E9" stroke-width="4" stroke-linecap="round"/>
+  <path d="m604 343 33 0" stroke="#D9E8F7" stroke-opacity=".6" stroke-width="3" stroke-linecap="round"/>
+  <path d="m303 400 20 3m344-24 22 5" stroke="#F5F9FE" stroke-opacity=".6" stroke-width="3" stroke-linecap="round"/>
+  <g transform="translate(348 446)">
+    <ellipse cx="0" cy="2" rx="57" ry="59" fill="url(#tire)" stroke="#07111D" stroke-width="8"/>
+    <circle r="35" fill="#182B40" stroke="url(#rim)" stroke-width="8"/>
+    <circle r="24" fill="#AEC1D2"/>
+    <circle r="12" fill="#34495E"/>
+    <path d="M0-22v44M-22 0h44M-16-16l32 32m0-32-32 32" stroke="#E1EAF2" stroke-width="4"/>
+    <circle r="5" fill="#FFD34F"/>
+  </g>
+  <g transform="translate(724 450)">
+    <ellipse cx="0" cy="1" rx="58" ry="60" fill="url(#tire)" stroke="#07111D" stroke-width="8"/>
+    <circle r="35" fill="#182B40" stroke="url(#rim)" stroke-width="8"/>
+    <circle r="24" fill="#AEC1D2"/>
+    <circle r="12" fill="#34495E"/>
+    <path d="M0-22v44M-22 0h44M-16-16l32 32m0-32-32 32" stroke="#E1EAF2" stroke-width="4"/>
+    <circle r="5" fill="#FFD34F"/>
+  </g>
+  <path d="m241 447 42-4m510-1 29 6" stroke="#FFD34F" stroke-width="5" stroke-linecap="round"/>
+  <path d="m526 210 26 4" stroke="#F5FAFF" stroke-opacity=".6" stroke-width="3" stroke-linecap="round"/>
+</svg>

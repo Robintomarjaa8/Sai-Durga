@@ -1,0 +1,50 @@
+# Homepage Page Overrides
+
+> **PROJECT:** Sai Durga Motor Driving School
+> **Generated:** 2026-10-14 18:06:19
+> **Page Type:** Landing / Marketing
+
+> ⚠️ **IMPORTANT:** Rules in this file **override** the Master file (`design-system/MASTER.md`).
+> Only deviations from the Master are documented here. For all other rules, refer to the Master.
+
+---
+
+## Page-Specific Rules
+
+### Layout Overrides
+
+- **Max Width:** 1200px (standard)
+- **Layout:** Full-width sections, centered content
+
+### Spacing Overrides
+
+- No overrides — use Master spacing
+
+### Typography Overrides
+
+- No overrides — use Master typography
+
+### Color Overrides
+
+- No overrides — use Master colors
+
+### Component Overrides
+
+- Avoid: Ignore accessibility motion settings
+- Avoid: Auto-play high-resolution loops without pause or captions
+- Avoid: Animate everything that moves
+
+---
+
+## Page-Specific Components
+
+- No unique components for this page
+
+---
+
+## Recommendations
+
+- Effects: @keyframes text animation, typing effect, background-clip: text, GSAP ScrollTrigger, split text
+- Animation: Check prefers-reduced-motion media query
+- Sustainability: Prefer click-to-play; provide pause and captions; stop off-screen and honor reduced motion
+- Animation: Animate 1-2 key elements per view maximum
