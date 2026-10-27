@@ -106,7 +106,7 @@ export function EnquiryForm() {
           <span>Indian mobile number <span aria-hidden="true">*</span></span>
           <input
             id="enquiry-mobile" name="mobileNumber" type="tel" autoComplete="tel" inputMode="tel"
-            placeholder="+91 9876543210" maxLength={16}
+            maxLength={16}
             value={values.mobileNumber} onChange={(event) => updateField("mobileNumber", event.target.value)}
             aria-required="true" aria-invalid={Boolean(errors.mobileNumber)} aria-describedby={describedBy("mobileNumber", "mobile-hint")}
           />
