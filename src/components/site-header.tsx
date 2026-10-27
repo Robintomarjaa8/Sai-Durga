@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { business, phoneHref } from "@/lib/business";
 
@@ -14,10 +14,26 @@ const navigation = [
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuToggleRef = useRef<HTMLButtonElement>(null);
 
-  function closeMenu() {
+  function closeMenu(restoreFocus = false) {
     setMenuOpen(false);
+    if (restoreFocus) menuToggleRef.current?.focus();
   }
+
+  useEffect(() => {
+    if (!menuOpen) return;
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+        menuToggleRef.current?.focus();
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [menuOpen]);
 
   return (
     <>
@@ -29,7 +45,7 @@ export function SiteHeader() {
       </div>
       <header className="site-header">
         <div className="site-container header-inner">
-          <a className="brand" href="#home" aria-label="Sai Durga Motor Driving School home" onClick={closeMenu}>
+          <a className="brand" href="#home" aria-label="Sai Durga Motor Driving School home" onClick={() => closeMenu()}>
             <span className="brand-mark" aria-hidden="true"><span>SD</span><i /></span>
             <span className="brand-copy">
               <span className="brand-name">Sai Durga</span>
@@ -38,6 +54,7 @@ export function SiteHeader() {
           </a>
 
           <button
+            ref={menuToggleRef}
             className={`menu-toggle${menuOpen ? " is-open" : ""}`}
             type="button"
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
@@ -50,9 +67,9 @@ export function SiteHeader() {
 
           <nav id="primary-navigation" className={`primary-nav${menuOpen ? " is-open" : ""}`} aria-label="Main navigation">
             {navigation.map((item) => (
-              <a key={item.href} href={item.href} onClick={closeMenu}>{item.label}</a>
+              <a key={item.href} href={item.href} onClick={() => closeMenu(true)}>{item.label}</a>
             ))}
-            <a className="nav-cta" href="#contact" onClick={closeMenu}>
+            <a className="nav-cta" href="#contact" onClick={() => closeMenu(true)}>
               Book a lesson <ArrowUpRight size={16} aria-hidden="true" />
             </a>
           </nav>

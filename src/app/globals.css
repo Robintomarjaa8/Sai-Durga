@@ -397,8 +397,7 @@ h1, h2, h3, p { margin-top: 0; }
   .footer-main { grid-template-columns: 1.2fr .8fr; gap: 30px 36px; }
   .footer-brand-column { grid-column: 1 / -1; }
 }
-@media (max-width: 760px) {
-  .site-container, .content-container, .hero-container { width: calc(100% - 40px); }
+@media (max-width: 900px) {
   .header-inner { height: 70px; }
   .brand-mark { width: 39px; height: 39px; border-radius: 11px; }
   .brand-name { font-size: 17px; }
@@ -412,6 +411,9 @@ h1, h2, h3, p { margin-top: 0; }
   .primary-nav.is-open { display: flex; flex-direction: column; }
   .primary-nav > a:not(.nav-cta) { padding: 14px 2px; border-bottom: 1px solid #edf0f5; }
   .primary-nav .nav-cta { align-self: flex-start; margin-top: 14px; }
+}
+@media (max-width: 760px) {
+  .site-container, .content-container, .hero-container { width: calc(100% - 40px); }
   .hero-section { padding: 29px 0 41px; }
   .hero-layout { min-height: 0; grid-template-columns: 1fr; gap: 28px; }
   .hero-copy { padding: 13px 0 0; }
@@ -425,6 +427,7 @@ h1, h2, h3, p { margin-top: 0; }
   .section-heading-row { align-items: flex-start; flex-direction: column; gap: 15px; margin-bottom: 27px; }
   .section-intro { max-width: 420px; }
   .course-grid, .process-grid { grid-template-columns: 1fr; gap: 11px; }
+  .branch-card-grid { grid-template-columns: 1fr; }
   .course-card { min-height: 218px; padding: 20px; }
   .course-card-top { margin-bottom: 19px; }
   .branches-layout, .why-layout, .contact-layout { grid-template-columns: 1fr; gap: 34px; }
